@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label "Master"
+    }
 
     tools {
         maven "M2"
